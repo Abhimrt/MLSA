@@ -7,7 +7,7 @@ const minute = document.querySelector("#minutes");
 const second = document.querySelector("#seconds");
 
 //competition date
-const date = Math.abs((new Date(2023, 04, 6).getTime() / 1000).toFixed(0));
+const date = Math.abs((new Date(2024, 0, 27).getTime() / 1000).toFixed(0));
 
 function displayTimeLeft() {
   const now = Math.abs((new Date().getTime() / 1000).toFixed(0));
@@ -24,4 +24,4 @@ function displayTimeLeft() {
   second.textContent = seconds;
 }
 displayTimeLeft();
-setInterval(() => {displayTimeLeft()}, 1000);
+setInterval(() => { displayTimeLeft() }, 1000);
